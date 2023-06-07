@@ -1,0 +1,66 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: Rule
+log-level: info
+external-controller: :9090
+dns:
+  enabled: true
+  nameserver:
+    - 119.29.29.29
+    - 223.5.5.5
+  fallback:
+    - 8.8.8.8
+    - 8.8.4.4
+    - tls://1.0.0.1:853
+    - tls://dns.google:853
+proxies:
+  - {name: 🇩🇪 DO-Germany, server: 104.248.33.162, port: 443, reality-opts: {public-key: IiuIighvDsor2v-vb5s3IJbNiqwLw568auiqoXxc7FM}, client-fingerprint: chrome, type: vless, uuid: 3d8586b9-9634-49d4-8390-a514f474b60c, tls: true, tfo: false, servername: www.microsoft.com, flow: xtls-rprx-vision, skip-cert-verify: false}
+  - {name: 🇮🇳 DO-India, server: 206.189.142.194, port: 443, reality-opts: {public-key: W9BjX6YmCIVsjhKMlz233Yoe0xcf0SVHfvPKqbf3vCg}, client-fingerprint: chrome, type: vless, uuid: 3aba1b2c-13b4-475d-89eb-20792c22d3ec, tls: true, tfo: false, servername: www.microsoft.com, flow: xtls-rprx-vision, skip-cert-verify: false}
+  - {name: 🇺🇸 DO-US-SFO, server: 146.190.60.75, port: 443, reality-opts: {public-key: 4comh-7Jm_wZXJQ5QiLSCbVGQIbMUzHUIBdb0aFtLzM}, client-fingerprint: chrome, type: vless, uuid: 8564ef41-373a-4dda-fe4b-12f7a388457b, tls: true, tfo: false, servername: www.microsoft.com, flow: xtls-rprx-vision, skip-cert-verify: false}
+  - {name: 🇧🇷 Sao Paulo 1, server: 164.152.56.245, port: 443, reality-opts: {public-key: UtL7E0Gmxj3X5JdcPAutpTRKo7K2hugkR0vwk2XroUM}, client-fingerprint: chrome, type: vless, uuid: 9ee7ac5f-7f23-4130-8e3f-69040db3b5f6, tls: true, tfo: false, servername: www.microsoft.com, flow: xtls-rprx-vision, skip-cert-verify: false}
+  - {name: 🇧🇷 Sao Paulo 2, server: 144.22.134.227, port: 443, reality-opts: {public-key: 9rx7JwMO-KRZZEM9TQBO19BOAmmGjJyjN86ll2J7uVc}, client-fingerprint: chrome, type: vless, uuid: ec586f26-1b16-465c-a561-7e4e49dac106, tls: true, tfo: false, servername: www.microsoft.com, flow: xtls-rprx-vision, skip-cert-verify: false}
+proxy-groups:
+  - name: 代理
+    type: select
+    proxies:
+      - 🇩🇪 DO-Germany
+      - 🇮🇳 DO-India
+      - 🇺🇸 DO-US-SFO
+      - 🇧🇷 Sao Paulo 1
+      - 🇧🇷 Sao Paulo 2
+  - name: 规则外路由选择
+    type: select
+    proxies:
+      - 代理
+      - DIRECT
+rules:
+  - DOMAIN-SUFFIX,local,DIRECT
+  - IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
+  - IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
+  - IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
+  - IP-CIDR,127.0.0.0/8,DIRECT,no-resolve
+  - IP-CIDR,100.64.0.0/10,DIRECT,no-resolve
+  - IP-CIDR6,::1/128,DIRECT,no-resolve
+  - IP-CIDR6,fc00::/7,DIRECT,no-resolve
+  - IP-CIDR6,fe80::/10,DIRECT,no-resolve
+  - IP-CIDR6,fd00::/8,DIRECT,no-resolve
+  - PROCESS-NAME,aria2c,DIRECT
+  - PROCESS-NAME,fdm,DIRECT
+  - PROCESS-NAME,Folx,DIRECT
+  - PROCESS-NAME,NetTransport,DIRECT
+  - PROCESS-NAME,Thunder,DIRECT
+  - PROCESS-NAME,Transmission,DIRECT
+  - PROCESS-NAME,uTorrent,DIRECT
+  - PROCESS-NAME,WebTorrent,DIRECT
+  - PROCESS-NAME,WebTorrent Helper,DIRECT
+  - PROCESS-NAME,DownloadService,DIRECT
+  - PROCESS-NAME,Weiyun,DIRECT
+  - DOMAIN-KEYWORD,aria2,DIRECT
+  - DOMAIN-KEYWORD,xunlei,DIRECT
+  - DOMAIN-KEYWORD,yunpan,DIRECT
+  - DOMAIN-KEYWORD,Thunder,DIRECT
+  - DOMAIN-KEYWORD,XLLiveUD,DIRECT
+  - GEOIP,CN,DIRECT
+  - MATCH,规则外路由选择
+Ask AI to edit or generate...
