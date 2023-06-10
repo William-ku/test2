@@ -16,19 +16,19 @@ dns:
     - tls://dns.google:853
 proxies:
   - {name: 🇩🇪 DO-Germany, server: 104.248.33.162, port: 443, reality-opts: {public-key: IiuIighvDsor2v-vb5s3IJbNiqwLw568auiqoXxc7FM}, client-fingerprint: chrome, type: vless, uuid: 3d8586b9-9634-49d4-8390-a514f474b60c, tls: true, tfo: false, servername: www.microsoft.com, flow: xtls-rprx-vision, skip-cert-verify: false}
-  - {name: 🇮🇳 DO-India, server: 206.189.142.194, port: 443, reality-opts: {public-key: W9BjX6YmCIVsjhKMlz233Yoe0xcf0SVHfvPKqbf3vCg}, client-fingerprint: chrome, type: vless, uuid: 3aba1b2c-13b4-475d-89eb-20792c22d3ec, tls: true, tfo: false, servername: www.microsoft.com, flow: xtls-rprx-vision, skip-cert-verify: false}
   - {name: 🇧🇷 Sao Paulo 1, server: 164.152.56.245, port: 443, reality-opts: {public-key: UtL7E0Gmxj3X5JdcPAutpTRKo7K2hugkR0vwk2XroUM}, client-fingerprint: chrome, type: vless, uuid: 9ee7ac5f-7f23-4130-8e3f-69040db3b5f6, tls: true, tfo: false, servername: www.microsoft.com, flow: xtls-rprx-vision, skip-cert-verify: false}
   - {name: 🇧🇷 Sao Paulo 2, server: 144.22.134.227, port: 443, reality-opts: {public-key: 9rx7JwMO-KRZZEM9TQBO19BOAmmGjJyjN86ll2J7uVc}, client-fingerprint: chrome, type: vless, uuid: ec586f26-1b16-465c-a561-7e4e49dac106, tls: true, tfo: false, servername: www.microsoft.com, flow: xtls-rprx-vision, skip-cert-verify: false}
-  - {name: 🇺🇸 DO-US, server: 143.198.60.16, port: 443, reality-opts: {public-key: UtL7E0Gmxj3X5JdcPAutpTRKo7K2hugkR0vwk2XroUM}, client-fingerprint: chrome, type: vless, uuid: 4d0d03e6-d8ea-43a9-f193-de3b5460b157, tls: true, tfo: false, servername: www.microsoft.com, flow: xtls-rprx-vision, skip-cert-verify: false}
+  - {name: 🇺🇸 DO-US 1, server: 143.198.60.16, port: 443, reality-opts: {public-key: UtL7E0Gmxj3X5JdcPAutpTRKo7K2hugkR0vwk2XroUM}, client-fingerprint: chrome, type: vless, uuid: 4d0d03e6-d8ea-43a9-f193-de3b5460b157, tls: true, tfo: false, servername: www.microsoft.com, flow: xtls-rprx-vision, skip-cert-verify: false}
+  - {name: 🇺🇸 DO-US 2, server: 146.190.112.184, port: 443, reality-opts: {public-key: R2gKMF0Tetlnesc1pPkZH9NaOeehw-f5_U9JKG_cLjU}, client-fingerprint: chrome, type: vless, uuid: 50baa924-0511-4c02-f285-411849bcfd2e, tls: true, tfo: false, servername: www.microsoft.com, flow: xtls-rprx-vision, skip-cert-verify: false}
 proxy-groups:
   - name: 代理
     type: select
     proxies:
       - 🇩🇪 DO-Germany
-      - 🇮🇳 DO-India
       - 🇧🇷 Sao Paulo 1
       - 🇧🇷 Sao Paulo 2
-      - 🇺🇸 DO-US
+      - 🇺🇸 DO-US 1
+      - 🇺🇸 DO-US 2
   - name: 规则外路由选择
     type: select
     proxies:
