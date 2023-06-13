@@ -18,6 +18,7 @@ proxies:
   - {name: 🇺🇸 DO-US 1, server: 146.190.112.184, port: 443, reality-opts: {public-key: R2gKMF0Tetlnesc1pPkZH9NaOeehw-f5_U9JKG_cLjU}, client-fingerprint: chrome, type: vless, uuid: 50baa924-0511-4c02-f285-411849bcfd2e, tls: true, tfo: false, servername: www.microsoft.com, flow: xtls-rprx-vision, skip-cert-verify: false}
   - {name: 🇺🇸 DO-US 2, server: 165.232.146.220, port: 443, reality-opts: {public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY}, client-fingerprint: chrome, type: vless, uuid: b26a19f9-c3c1-43ed-c4c1-dbbccf6571fb, tls: true, tfo: false, servername: www.microsoft.com, flow: xtls-rprx-vision, skip-cert-verify: false}
   - {name: 🇩🇪 DO-Germany, server: 165.227.140.63, port: 443, reality-opts: {public-key: R2gKMF0Tetlnesc1pPkZH9NaOeehw-f5_U9JKG_cLjU}, client-fingerprint: chrome, type: vless, uuid: c0df3cbb-036d-4dca-f6f5-0af62b7bb0ab, tls: true, tfo: false, servername: www.microsoft.com, flow: xtls-rprx-vision, skip-cert-verify: false}
+  - {name: 🇧🇷 中转-Sao Paulo, server: 146.190.112.184, port: 9527, reality-opts: {public-key: 9rx7JwMO-KRZZEM9TQBO19BOAmmGjJyjN86ll2J7uVc}, client-fingerprint: chrome, type: vless, uuid: ec586f26-1b16-465c-a561-7e4e49dac106, tls: true, tfo: false, servername: www.microsoft.com, flow: xtls-rprx-vision, skip-cert-verify: false}
   - {name: 🇧🇷 Sao Paulo, server: 144.22.134.227, port: 443, reality-opts: {public-key: 9rx7JwMO-KRZZEM9TQBO19BOAmmGjJyjN86ll2J7uVc}, client-fingerprint: chrome, type: vless, uuid: ec586f26-1b16-465c-a561-7e4e49dac106, tls: true, tfo: false, servername: www.microsoft.com, flow: xtls-rprx-vision, skip-cert-verify: false}
 proxy-groups:
   - name: 代理
@@ -26,6 +27,7 @@ proxy-groups:
       - 🇺🇸 DO-US 1
       - 🇺🇸 DO-US 2
       - 🇩🇪 DO-Germany
+      - 🇧🇷 中转-Sao Paulo
       - 🇧🇷 Sao Paulo
   - name: 规则外路由选择
     type: select
