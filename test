@@ -25,7 +25,6 @@ proxy-groups:
     proxies:
       - 🇺🇸 DO-US 1
       - 🇺🇸 DO-US 2
-      - 🇳🇱 DO-Netherlands
       - 🇩🇪 DO-Germany
       - 🇧🇷 Sao Paulo
   - name: 规则外路由选择
