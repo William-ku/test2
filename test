@@ -62,4 +62,4 @@ rules:
   - DOMAIN-KEYWORD,Thunder,DIRECT
   - DOMAIN-KEYWORD,XLLiveUD,DIRECT
   - GEOIP,CN,DIRECT
-  - MATCH,规则外路由选择
+  - MATCH,规则外路由
