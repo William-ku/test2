@@ -15,7 +15,7 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - {name: 🇯🇵 AWS-Japan, server: 54.199.209.121, port: 443, reality-opts: {public-key: UtL7E0Gmxj3X5JdcPAutpTRKo7K2hugkR0vwk2XroUM}, client-fingerprint: chrome, type: vless, uuid: 292b1eb5-42c8-40ac-c662-21fb6d7ba81e, tls: true, tfo: false, servername: www.microsoft.com, flow: xtls-rprx-vision, skip-cert-verify: false}
+  - {name: 🇸🇬 AWS-Singapore, server: 13.212.187.36, port: 443, reality-opts: {public-key: R2gKMF0Tetlnesc1pPkZH9NaOeehw-f5_U9JKG_cLjU}, client-fingerprint: chrome, type: vless, uuid: 7f617f49-b338-42ad-ae29-180fe6798410, tls: true, tfo: false, servername: www.microsoft.com, flow: xtls-rprx-vision, skip-cert-verify: false}
   - {name: 🇺🇸 DO-US 1, server: 146.190.112.184, port: 443, reality-opts: {public-key: R2gKMF0Tetlnesc1pPkZH9NaOeehw-f5_U9JKG_cLjU}, client-fingerprint: chrome, type: vless, uuid: 50baa924-0511-4c02-f285-411849bcfd2e, tls: true, tfo: false, servername: www.microsoft.com, flow: xtls-rprx-vision, skip-cert-verify: false}
   - {name: 🇺🇸 DO-US 2, server: 165.232.146.220, port: 443, reality-opts: {public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY}, client-fingerprint: chrome, type: vless, uuid: b26a19f9-c3c1-43ed-c4c1-dbbccf6571fb, tls: true, tfo: false, servername: www.microsoft.com, flow: xtls-rprx-vision, skip-cert-verify: false}
   - {name: 🇮🇳 DO-India, server: 143.244.142.248, port: 443, reality-opts: {public-key: UK7qxWWGfRQcQfwaGpHnqmmqqJBut4jxve8AeDDJ2UI}, client-fingerprint: chrome, type: vless, uuid: 076ab36f-e3c5-401e-b4bb-e020afe3bc25, tls: true, tfo: false, servername: www.microsoft.com, flow: xtls-rprx-vision, skip-cert-verify: false}
@@ -26,7 +26,7 @@ proxy-groups:
   - name: 代理
     type: select
     proxies:
-      - 🇯🇵 AWS-Japan
+      - 🇸🇬 AWS-Singapore
       - 🇺🇸 DO-US 1
       - 🇺🇸 DO-US 2
       - 🇮🇳 DO-India
