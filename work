@@ -1,0 +1,77 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: Rule
+log-level: info
+external-controller: :9090
+dns:
+  enabled: true
+  nameserver:
+    - 119.29.29.29
+    - 223.5.5.5
+  fallback:
+    - 8.8.8.8
+    - 8.8.4.4
+    - tls://1.0.0.1:853
+    - tls://dns.google:853
+proxies:
+  - {name: 🇭🇰 CF-HK, server: 45.40.59.195, port: 443, client-fingerprint: chrome, type: vless, uuid: a97195a4-7878-4f12-8b60-f6c62b011106, tls: true, tfo: false, servername: works.oyaldeer.eu.org, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: works.oyaldeer.eu.org}}}
+  - {name: 🇸🇬 CF-SG, server: 8.222.230.111, port: 443, client-fingerprint: chrome, type: vless, uuid: a97195a4-7878-4f12-8b60-f6c62b011106, tls: true, tfo: false, servername: works.oyaldeer.eu.org, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: works.oyaldeer.eu.org}}}
+  - {name: 🇯🇵 CF-JP, server: 47.91.19.46, port: 443, client-fingerprint: chrome, type: vless, uuid: a97195a4-7878-4f12-8b60-f6c62b011106, tls: true, tfo: false, servername: works.oyaldeer.eu.org, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: works.oyaldeer.eu.org}}}
+  - {name: 🇺🇸 CF-US, server: 64.64.230.169, port: 443, client-fingerprint: chrome, type: vless, uuid: a97195a4-7878-4f12-8b60-f6c62b011106, tls: true, tfo: false, servername: works.oyaldeer.eu.org, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: works.oyaldeer.eu.org}}}
+  - {name: 🇮🇳 CF-India, server: 129.226.42.183, port: 443, client-fingerprint: chrome, type: vless, uuid: a97195a4-7878-4f12-8b60-f6c62b011106, tls: true, tfo: false, servername: works.oyaldeer.eu.org, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: works.oyaldeer.eu.org}}}
+  - {name: 🇩🇪 CF-Germany, server: 8.209.65.48, port: 443, client-fingerprint: chrome, type: vless, uuid: a97195a4-7878-4f12-8b60-f6c62b011106, tls: true, tfo: false, servername: works.oyaldeer.eu.org, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: works.oyaldeer.eu.org}}}
+  - {name: CF-AMS, server: 8.209.76.1, port: 443, client-fingerprint: chrome, type: vless, uuid: a97195a4-7878-4f12-8b60-f6c62b011106, tls: true, tfo: false, servername: works.oyaldeer.eu.org, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: works.oyaldeer.eu.org}}}
+  - {name: 🇮🇹 CF-Milan, server: 38.180.22.58, port: 443, client-fingerprint: chrome, type: vless, uuid: a97195a4-7878-4f12-8b60-f6c62b011106, tls: true, tfo: false, servername: works.oyaldeer.eu.org, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: works.oyaldeer.eu.org}}}
+  - {name: CF-RO, server: 176.97.76.208, port: 443, client-fingerprint: chrome, type: vless, uuid: a97195a4-7878-4f12-8b60-f6c62b011106, tls: true, tfo: false, servername: works.oyaldeer.eu.org, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: works.oyaldeer.eu.org}}}
+  - {name: 🇬🇧 CF-GB, server: 38.180.30.33, port: 443, client-fingerprint: chrome, type: vless, uuid: a97195a4-7878-4f12-8b60-f6c62b011106, tls: true, tfo: false, servername: works.oyaldeer.eu.org, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: works.oyaldeer.eu.org}}}
+  - {name: 🇩🇰 CF-DK, server: 38.180.20.29, port: 443, client-fingerprint: chrome, type: vless, uuid: a97195a4-7878-4f12-8b60-f6c62b011106, tls: true, tfo: false, servername: works.oyaldeer.eu.org, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: works.oyaldeer.eu.org}}}
+proxy-groups:
+  - name: 代理
+    type: select
+    proxies:
+      - 🇭🇰 CF-HK
+      - 🇸🇬 CF-SG
+      - 🇯🇵 CF-JP
+      - 🇺🇸 CF-US
+      - 🇮🇳 CF-India
+      - 🇩🇪 CF-Germany
+      - CF-AMS
+      - 🇮🇹 CF-Milan
+      - CF-RO
+      - 🇬🇧 CF-GB
+      - 🇩🇰 CF-DK
+  - name: 规则外路由选择
+    type: select
+    proxies:
+      - 代理
+      - DIRECT
+rules:
+  - DOMAIN-SUFFIX,local,DIRECT
+  - IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
+  - IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
+  - IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
+  - IP-CIDR,127.0.0.0/8,DIRECT,no-resolve
+  - IP-CIDR,100.64.0.0/10,DIRECT,no-resolve
+  - IP-CIDR6,::1/128,DIRECT,no-resolve
+  - IP-CIDR6,fc00::/7,DIRECT,no-resolve
+  - IP-CIDR6,fe80::/10,DIRECT,no-resolve
+  - IP-CIDR6,fd00::/8,DIRECT,no-resolve
+  - PROCESS-NAME,aria2c,DIRECT
+  - PROCESS-NAME,fdm,DIRECT
+  - PROCESS-NAME,Folx,DIRECT
+  - PROCESS-NAME,NetTransport,DIRECT
+  - PROCESS-NAME,Thunder,DIRECT
+  - PROCESS-NAME,Transmission,DIRECT
+  - PROCESS-NAME,uTorrent,DIRECT
+  - PROCESS-NAME,WebTorrent,DIRECT
+  - PROCESS-NAME,WebTorrent Helper,DIRECT
+  - PROCESS-NAME,DownloadService,DIRECT
+  - PROCESS-NAME,Weiyun,DIRECT
+  - DOMAIN-KEYWORD,aria2,DIRECT
+  - DOMAIN-KEYWORD,xunlei,DIRECT
+  - DOMAIN-KEYWORD,yunpan,DIRECT
+  - DOMAIN-KEYWORD,Thunder,DIRECT
+  - DOMAIN-KEYWORD,XLLiveUD,DIRECT
+  - GEOIP,CN,DIRECT
+  - MATCH,规则外路由选择
