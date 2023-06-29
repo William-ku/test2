@@ -22,7 +22,7 @@ proxies:
   - {name: 🇧🇷 Sao Paulo, server: 144.22.134.227, port: 443, reality-opts: {public-key: 9rx7JwMO-KRZZEM9TQBO19BOAmmGjJyjN86ll2J7uVc}, client-fingerprint: chrome, type: vless, uuid: ec586f26-1b16-465c-a561-7e4e49dac106, tls: true, tfo: false, servername: www.microsoft.com, flow: xtls-rprx-vision, skip-cert-verify: false}
   - {name: TR, server: 185.161.122.2, port: 21495, reality-opts: {public-key: UtL7E0Gmxj3X5JdcPAutpTRKo7K2hugkR0vwk2XroUM}, client-fingerprint: chrome, type: vless, uuid: 9dc4b475-e72a-4bf6-a537-4fb07ad07f66, tls: true, tfo: false, servername: www.microsoft.com, flow: xtls-rprx-vision, skip-cert-verify: false}
   - {name: TR-中转, server: 64.227.145.90, port: 9999, reality-opts: {public-key: UtL7E0Gmxj3X5JdcPAutpTRKo7K2hugkR0vwk2XroUM}, client-fingerprint: chrome, type: vless, uuid: 9dc4b475-e72a-4bf6-a537-4fb07ad07f66, tls: true, tfo: false, servername: www.microsoft.com, flow: xtls-rprx-vision, skip-cert-verify: false}
-  - {name: 🇸🇬 SGP | CDN, server: 172.67.24.41, port: 80, client-fingerprint: chrome, type: vless, uuid: b8759a5b-2a01-4377-ab76-b9dcf4ff9bd5, tls: false, tfo: false, servername: cdn.oyaldeer.top, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cdn.oyaldeer.top}}}
+  - {name: 🇸🇬 SGP | CDN, server: 173.245.49.74, port: 80, client-fingerprint: chrome, type: vless, uuid: b8759a5b-2a01-4377-ab76-b9dcf4ff9bd5, tls: false, tfo: false, servername: cdn.oyaldeer.top, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cdn.oyaldeer.top}}}
 proxy-groups:
   - name: 代理
     type: select
