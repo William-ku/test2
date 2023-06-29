@@ -19,11 +19,10 @@ proxies:
   - {name: 🇺🇸 DO-US 2, server: 147.182.243.244, port: 443, reality-opts: {public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY}, client-fingerprint: chrome, type: vless, uuid: dfdf4132-9b1e-4893-d244-5b781a3cadc6, tls: true, tfo: false, servername: www.microsoft.com, flow: xtls-rprx-vision, skip-cert-verify: false}
   - {name: 🇮🇳 DO-India, server: 64.227.145.90, port: 443, reality-opts: {public-key: UK7qxWWGfRQcQfwaGpHnqmmqqJBut4jxve8AeDDJ2UI}, client-fingerprint: chrome, type: vless, uuid: 9c02986f-10b2-450e-d01a-e56cb6c957e2, tls: true, tfo: false, servername: www.microsoft.com, flow: xtls-rprx-vision, skip-cert-verify: false}
   - {name: 🇩🇪 DO-Germany, server: 165.227.140.63, port: 443, reality-opts: {public-key: R2gKMF0Tetlnesc1pPkZH9NaOeehw-f5_U9JKG_cLjU}, client-fingerprint: chrome, type: vless, uuid: c0df3cbb-036d-4dca-f6f5-0af62b7bb0ab, tls: true, tfo: false, servername: www.microsoft.com, flow: xtls-rprx-vision, skip-cert-verify: false}
-  - {name: 🇧🇷 Sao Paulo, server: 144.22.134.227, port: 443, reality-opts: {public-key: 9rx7JwMO-KRZZEM9TQBO19BOAmmGjJyjN86ll2J7uVc}, client-fingerprint: chrome, type: vless, uuid: ec586f26-1b16-465c-a561-7e4e49dac106, tls: true, tfo: false, servername: www.microsoft.com, flow: xtls-rprx-vision, skip-cert-verify: false}
   - {name: TR, server: 185.161.122.2, port: 21495, reality-opts: {public-key: UtL7E0Gmxj3X5JdcPAutpTRKo7K2hugkR0vwk2XroUM}, client-fingerprint: chrome, type: vless, uuid: 9dc4b475-e72a-4bf6-a537-4fb07ad07f66, tls: true, tfo: false, servername: www.microsoft.com, flow: xtls-rprx-vision, skip-cert-verify: false}
   - {name: TR-中转, server: 64.227.145.90, port: 9999, reality-opts: {public-key: UtL7E0Gmxj3X5JdcPAutpTRKo7K2hugkR0vwk2XroUM}, client-fingerprint: chrome, type: vless, uuid: 9dc4b475-e72a-4bf6-a537-4fb07ad07f66, tls: true, tfo: false, servername: www.microsoft.com, flow: xtls-rprx-vision, skip-cert-verify: false}
   - {name: 🇸🇬 SGP | CDN, server: 173.245.49.74, port: 80, client-fingerprint: chrome, type: vless, uuid: b8759a5b-2a01-4377-ab76-b9dcf4ff9bd5, tls: false, tfo: false, servername: cdn.oyaldeer.top, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cdn.oyaldeer.top}}}
-  - {name: 🇧🇷 Sao Paulo 2, server: 144.22.134.227, port: 443, reality-opts: {public-key: R2gKMF0Tetlnesc1pPkZH9NaOeehw-f5_U9JKG_cLjU}, client-fingerprint: chrome, type: vless, uuid: edfa2c67-b39e-4506-dc72-cc51d69d8b60, tls: true, tfo: false, servername: www.microsoft.com, flow: xtls-rprx-vision, skip-cert-verify: false}
+  - {name: 🇧🇷 Sao Paulo, server: 144.22.134.227, port: 443, reality-opts: {public-key: R2gKMF0Tetlnesc1pPkZH9NaOeehw-f5_U9JKG_cLjU}, client-fingerprint: chrome, type: vless, uuid: edfa2c67-b39e-4506-dc72-cc51d69d8b60, tls: true, tfo: false, servername: www.microsoft.com, flow: xtls-rprx-vision, skip-cert-verify: false}
 proxy-groups:
   - name: 代理
     type: select
@@ -32,11 +31,10 @@ proxy-groups:
       - 🇺🇸 DO-US 2
       - 🇮🇳 DO-India
       - 🇩🇪 DO-Germany
-      - 🇧🇷 Sao Paulo
       - TR
       - TR-中转
       - 🇸🇬 SGP | CDN
-      - 🇧🇷 Sao Paulo 2
+      - 🇧🇷 Sao Paulo
   - name: 规则外路由选择
     type: select
     proxies:
