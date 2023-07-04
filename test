@@ -30,7 +30,7 @@ proxy-groups:
       - 🇩🇪 DO-Germany
       - 🇧🇷 Sao Paulo
       - 🇸🇬 DO-SGP | CDN
-      - TurKey
+      - Türkiye
   - name: 规则外路由选择
     type: select
     proxies:
