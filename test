@@ -20,7 +20,7 @@ proxies:
   - {name: 🇩🇪 DO-Germany, server: 165.227.140.63, port: 443, reality-opts: {public-key: R2gKMF0Tetlnesc1pPkZH9NaOeehw-f5_U9JKG_cLjU}, client-fingerprint: chrome, type: vless, uuid: c0df3cbb-036d-4dca-f6f5-0af62b7bb0ab, tls: true, tfo: false, servername: www.microsoft.com, flow: xtls-rprx-vision, skip-cert-verify: false}
   - {name: 🇧🇷 Sao Paulo, server: 144.22.134.227, port: 443, reality-opts: {public-key: R2gKMF0Tetlnesc1pPkZH9NaOeehw-f5_U9JKG_cLjU}, client-fingerprint: chrome, type: vless, uuid: edfa2c67-b39e-4506-dc72-cc51d69d8b60, tls: true, tfo: false, servername: www.microsoft.com, flow: xtls-rprx-vision, skip-cert-verify: false}
   - {name: 🇸🇬 DO-SGP | CDN, server: 8.222.202.163, port: 80, client-fingerprint: chrome, type: vless, uuid: d4188227-e1c8-4ff1-9d2e-aed856366e19, tls: false, tfo: false, servername: cf.gckjoy.eu.org, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cf.gckjoy.eu.org}}}
-  - {name: TurKey, server: 64.227.145.90, port: 9934, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: hCB65ks3ki, tfo: false}
+  - {name: Türkiye, server: 64.227.145.90, port: 9934, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: hCB65ks3ki, tfo: false}
 proxy-groups:
   - name: 代理
     type: select
