@@ -15,20 +15,20 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - {name: 🇭🇰 深港-SGP, server: 183.56.222.147, port: 26282, client-fingerprint: chrome, type: ss, cipher: 2022-blake3-aes-256-gcm, password: B8xY2sxyrBSatpKCuxH5R0kRoMY8E9RUE5E09SfZd1Kl, tfo: false}
-  - {name: 🇯🇵 沪日-US, server: 139.226.136.165, port: 37598, client-fingerprint: chrome, type: ss, cipher: 2022-blake3-aes-256-gcm, password: w2dKo5fucdbCimhPWqBHUesKg6dKIyPt6uOKIrwUyhM0, tfo: false}
-  - {name: 🇭🇰 深圳-香港-德国, server: 183.56.222.147, port: 26285, client-fingerprint: chrome, type: ss, cipher: 2022-blake3-aes-256-gcm, password: Nx45X4py7FUPFiZGiqgTfzNWebrNpcW6u99OVemoYPJ7, tfo: false}
-  - {name: 🇭🇰 深圳-香港-印度, server: 183.56.222.147, port: 26289, client-fingerprint: chrome, type: ss, cipher: 2022-blake3-aes-256-gcm, password: 6RAfvb6QogN1kFXfXX3fo00HCLCyvCuHPJBWIOxtA9eM, tfo: false}
-  - {name: 合租TR, server: 183.56.222.147, port: 26292, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: hCB65ks3ki, tfo: false}
+  - {name: 🇹🇷 土耳其, server: 183.56.222.147, port: 26292, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: hCB65ks3ki, tfo: false}
+  - {name: 🇺🇸 美国, server: 139.226.136.165, port: 37598, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: w2dKo5fucdbCimhPWqBHUesKg6dKIyPt6uOKIrwUyhM0, tfo: false}
+  - {name: 🇸🇬 新加坡, server: 183.56.222.147, port: 26282, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: B8xY2sxyrBSatpKCuxH5R0kRoMY8E9RUE5E09SfZd1Kl, tfo: false}
+  - {name: 🇮🇳 印度, server: 183.56.222.147, port: 26289, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: 6RAfvb6QogN1kFXfXX3fo00HCLCyvCuHPJBWIOxtA9eM, tfo: false}
+  - {name: 🇩🇪 德国, server: 183.56.222.147, port: 26285, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: Nx45X4py7FUPFiZGiqgTfzNWebrNpcW6u99OVemoYPJ7, tfo: false}
 proxy-groups:
   - name: 代理
     type: select
     proxies:
-      - 🇭🇰 深港-SGP
-      - 🇯🇵 沪日-US
-      - 🇭🇰 深圳-香港-德国
-      - 🇭🇰 深圳-香港-印度
-      - 合租TR
+      - 🇹🇷 土耳其
+      - 🇺🇸 美国
+      - 🇸🇬 新加坡
+      - 🇮🇳 印度
+      - 🇩🇪 德国
   - name: 规则外路由选择
     type: select
     proxies:
