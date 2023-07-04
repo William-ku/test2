@@ -16,7 +16,7 @@ dns:
     - tls://dns.google:853
 proxies:
   - {name: 🇹🇷 土耳其, server: 183.56.222.147, port: 26292, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: hCB65ks3ki, tfo: false}
-  - {name: 🇺🇸 美国, server: 139.226.136.165, port: 37598, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: w2dKo5fucdbCimhPWqBHUesKg6dKIyPt6uOKIrwUyhM0, tfo: false}
+  - {name: 🇺🇸 美国, server: 183.56.222.147, port: 26339, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: w2dKo5fucdbCimhPWqBHUesKg6dKIyPt6uOKIrwUyhM0, tfo: false}
   - {name: 🇸🇬 新加坡, server: 183.56.222.147, port: 26282, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: B8xY2sxyrBSatpKCuxH5R0kRoMY8E9RUE5E09SfZd1Kl, tfo: false}
   - {name: 🇮🇳 印度, server: 183.56.222.147, port: 26289, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: 6RAfvb6QogN1kFXfXX3fo00HCLCyvCuHPJBWIOxtA9eM, tfo: false}
   - {name: 🇩🇪 德国, server: 183.56.222.147, port: 26285, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: Nx45X4py7FUPFiZGiqgTfzNWebrNpcW6u99OVemoYPJ7, tfo: false}
