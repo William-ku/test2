@@ -20,6 +20,7 @@ proxies:
   - {name: 🇸🇬 新加坡, server: 183.56.222.147, port: 26282, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: B8xY2sxyrBSatpKCuxH5R0kRoMY8E9RUE5E09SfZd1Kl, tfo: false}
   - {name: 🇮🇳 印度, server: 183.56.222.147, port: 26289, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: 6RAfvb6QogN1kFXfXX3fo00HCLCyvCuHPJBWIOxtA9eM, tfo: false}
   - {name: 🇩🇪 德国, server: 183.56.222.147, port: 26285, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: Nx45X4py7FUPFiZGiqgTfzNWebrNpcW6u99OVemoYPJ7, tfo: false}
+  - {name: 🇧🇷 圣保罗, server: 183.56.222.147, port: 25066, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: 992UCWS8myI6ygcljJXpBuhA8052Tz2brgIkdyY9waml, tfo: false}
 proxy-groups:
   - name: 代理
     type: select
@@ -29,6 +30,7 @@ proxy-groups:
       - 🇸🇬 新加坡
       - 🇮🇳 印度
       - 🇩🇪 德国
+      - 🇧🇷 圣保罗
   - name: 规则外路由选择
     type: select
     proxies:
