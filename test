@@ -22,7 +22,7 @@ proxies:
   - {name: 🇩🇪 DO-Germany, server: 165.227.140.63, port: 443, reality-opts: {public-key: R2gKMF0Tetlnesc1pPkZH9NaOeehw-f5_U9JKG_cLjU}, client-fingerprint: chrome, type: vless, uuid: c0df3cbb-036d-4dca-f6f5-0af62b7bb0ab, tls: true, tfo: false, servername: www.microsoft.com, flow: xtls-rprx-vision, skip-cert-verify: false}
   - {name: Türkiye, server: 64.227.145.90, port: 9934, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: hCB65ks3ki, tfo: false}
   - {name: 🇸🇬 DO-SGP, server: 128.199.201.114, port: 443, reality-opts: {public-key: g1f1wLjim5gOVGnI5LGUV0dL4iFXPoiepOPZfSxJe14}, client-fingerprint: chrome, type: vless, uuid: 39fccd87-df9a-4b1d-d2a4-62263b549387, tls: true, tfo: false, servername: www.microsoft.com, flow: xtls-rprx-vision, skip-cert-verify: false}
-  - {name: 🇧🇷 Sao Paulo, server: 168.138.135.211, port: 54129, reality-opts: {public-key: Z3ZGnAOdKkzJ07gR_7_0k9_iTTFP6paDOrqx1rN2LU4}, client-fingerprint: chrome, type: vless, uuid: 35f5e79d-97bd-4108-946e-28af4b114724, tls: true, tfo: false, servername: www.microsoft.com, flow: xtls-rprx-vision, skip-cert-verify: false}
+  - {name: 🇧🇷 Sao Paulo, server: 168.138.135.211, port: 14207, reality-opts: {public-key: IiuIighvDsor2v-vb5s3IJbNiqwLw568auiqoXxc7FM}, client-fingerprint: chrome, type: vless, uuid: 7991e168-6849-4838-b792-ae86612f0b21, tls: true, tfo: false, servername: www.microsoft.com, flow: xtls-rprx-vision, skip-cert-verify: false}
 proxy-groups:
   - name: 代理
     type: select
