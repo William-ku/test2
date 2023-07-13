@@ -22,7 +22,8 @@ proxies:
   - {name: 🇦🇺 Sydney, server: 111.38.37.16, port: 25372, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: wScMqPON9by01FxT0G9t5jumWdVDmjqN6Ugs7ORW1kXd, tfo: false}
   - {name: 🇸🇬 Singapore, server: 111.38.37.16, port: 25373, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: ZMzoSwquktwdWIcOwIYCc5ZlRyGj00s7Rqgm06sLsfUu, tfo: false}
   - {name: 🇧🇷 Sao Paulo, server: 111.38.37.16, port: 25374, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: vrtezpVeoe7Sbhudi8amgaOAzmLb35YVWyk47o5Xrr6c, tfo: false}
-  - {name: 🇭🇰 HK, server: 139.226.136.165, port: 26748, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: adGjG0jKgnICgHuiNXCMRWaqU2xP9SHWkE9a2J5wkLnA, tfo: false}
+  - {name: 🇭🇰 HK 1, server: 139.226.136.165, port: 26748, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: adGjG0jKgnICgHuiNXCMRWaqU2xP9SHWkE9a2J5wkLnA, tfo: false}
+  - {name: 🇭🇰 HK 2, server: 111.38.37.16, port: 25380, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: 9ys6HK9Obm, tfo: false}
 proxy-groups:
   - name: 代理
     type: select
@@ -34,7 +35,8 @@ proxy-groups:
       - 🇦🇺 Sydney
       - 🇸🇬 Singapore
       - 🇧🇷 Sao Paulo
-      - 🇭🇰 HK
+      - 🇭🇰 HK 1
+      - 🇭🇰 HK 2
   - name: 规则外路由选择
     type: select
     proxies:
