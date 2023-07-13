@@ -15,22 +15,26 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - {name: 🇹🇷 土耳其, server: 183.56.222.147, port: 26292, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: hCB65ks3ki, tfo: false}
-  - {name: 🇺🇸 美国, server: 183.56.222.147, port: 26339, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: w2dKo5fucdbCimhPWqBHUesKg6dKIyPt6uOKIrwUyhM0, tfo: false}
-  - {name: 🇸🇬 新加坡, server: 183.56.222.147, port: 26282, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: B8xY2sxyrBSatpKCuxH5R0kRoMY8E9RUE5E09SfZd1Kl, tfo: false}
-  - {name: 🇮🇳 印度, server: 183.56.222.147, port: 26289, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: 6RAfvb6QogN1kFXfXX3fo00HCLCyvCuHPJBWIOxtA9eM, tfo: false}
-  - {name: 🇩🇪 德国, server: 183.56.222.147, port: 26285, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: Nx45X4py7FUPFiZGiqgTfzNWebrNpcW6u99OVemoYPJ7, tfo: false}
-  - {name: 🇧🇷 圣保罗, server: 183.56.222.147, port: 25066, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: 992UCWS8myI6ygcljJXpBuhA8052Tz2brgIkdyY9waml, tfo: false}
+  - {name: 订阅转换:https://suburl.v1.mk, server: api.v1.mk, port: 8888, client-fingerprint: chrome, type: ss, cipher: chacha20-ietf-poly1305, password: 014bb090-bc65-46fd-ad20-c70718b676e8, tfo: false}
+  - {name: 🇹🇷 Turkey, server: 111.38.37.16, port: 25370, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: hCB65ks3ki, tfo: false}
+  - {name: 🇺🇸 United States | 2x, server: 111.38.37.16, port: 45612, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: cybzSZmcviAqAl0ttf21AVJtev2qCmb3cw38dpJg32OR, tfo: false}
+  - {name: 🇺🇸 United States | 流媒体 1x, server: 139.226.136.165, port: 36716, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: ifSwQYJx6k7SLPWGxpRFj4StDnXkgDR1H0DocAxPglKX, tfo: false}
+  - {name: 🇦🇺 Sydney, server: 111.38.37.16, port: 25372, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: wScMqPON9by01FxT0G9t5jumWdVDmjqN6Ugs7ORW1kXd, tfo: false}
+  - {name: 🇸🇬 Singapore, server: 111.38.37.16, port: 25373, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: ZMzoSwquktwdWIcOwIYCc5ZlRyGj00s7Rqgm06sLsfUu, tfo: false}
+  - {name: 🇧🇷 Sao Paulo, server: 111.38.37.16, port: 25374, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: vrtezpVeoe7Sbhudi8amgaOAzmLb35YVWyk47o5Xrr6c, tfo: false}
+  - {name: 🇭🇰 HK, server: 139.226.136.165, port: 26748, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: adGjG0jKgnICgHuiNXCMRWaqU2xP9SHWkE9a2J5wkLnA, tfo: false}
 proxy-groups:
   - name: 代理
     type: select
     proxies:
-      - 🇹🇷 土耳其
-      - 🇺🇸 美国
-      - 🇸🇬 新加坡
-      - 🇮🇳 印度
-      - 🇩🇪 德国
-      - 🇧🇷 圣保罗
+      - 订阅转换:https://suburl.v1.mk
+      - 🇹🇷 Turkey
+      - 🇺🇸 United States | 2x
+      - 🇺🇸 United States | 流媒体 1x
+      - 🇦🇺 Sydney
+      - 🇸🇬 Singapore
+      - 🇧🇷 Sao Paulo
+      - 🇭🇰 HK
   - name: 规则外路由选择
     type: select
     proxies:
